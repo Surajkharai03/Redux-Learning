@@ -1,21 +1,26 @@
 import { useEffect } from "react";
-import {asyncgetusers} from "./store/userActions";
-import { useDispatch, useSelector } from "react-redux";
+import Nav from "./components/Nav";
+import Mainroutes from "./routes/Mainroutes";
+import { asynccurrentuser } from "./store/actions/userAction";
+import { useDispatch } from "react-redux";
+import { asyncloadproducts } from "./store/actions/productAction";
 
 const App = () => {
-   const data = useSelector((state) => state); 
-   const dispatch = useDispatch();
-   console.log(data);
-   
-    
-
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch (asyncgetusers());     // actions
-  }, []);
-  return (
-    <div>App</div>
-  )
-}
+    dispatch(asynccurrentuser());
+    dispatch(asyncloadproducts());
+  }, [dispatch]);
 
-export default App
+  return (
+    <div className=" overflow-auto w-full min-h-screen bg-gray-800 text-white font-thin">
+      <div className="px-[10%]">
+        <Nav />
+        <Mainroutes />
+      </div>
+    </div>
+  );
+};
+
+export default App;

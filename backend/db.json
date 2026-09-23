@@ -1,25 +1,45 @@
 {
   "users": [
     {
-      "id": "sddjchbdskjk",
-      "username": "diviii",
-      "email": "diviii0303@.com",
-      "password": "030306"
+      "id": "-DpQ594L6CI",
+      "username": "skop",
+      "email": "adminop03@gmail.com",
+      "password": "132555",
+      "isAdmin": true
+    },
+    {
+      "username": "sagar",
+      "email": "userone@gmail.com",
+      "password": "693256",
+      "id": "QhVDBvpsE-M",
+      "isAdmin": false
+    },
+    {
+      "username": "bhanu",
+      "email": "usertwo@gmail.com",
+      "password": "123456",
+      "id": "xE5W3VCvUhc",
+      "isAdmin": false
     }
   ],
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-      "price": 109.95,
+      "price": 2000,
       "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-      "category": "men's clothing",
-      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
-      "rating": {
-        "rate": 3.9,
-        "count": 120
-      }
+      "category": "Men's clothing",
+      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png"
+    },
+    {
+      "image": "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/a/d/ad22b92Nike-HF5441-115_1.jpg?rnd=20200526195200&tr=w-1536",
+      "title": "Nike Dunk Low Retro",
+      "price": 8295,
+      "description": "You can always count on a classic. The Dunk Low pairs its iconic colour-blocking with premium materials and plush padding for game-changing comfort that lasts. ",
+      "category": "Men's Shoes",
+      "id": "4ImxHP6h48U"
     }
   ],
-  "cart": []
+  "carts": [],
+  "$schema": "./node_modules/json-server/schema.json"
 }
